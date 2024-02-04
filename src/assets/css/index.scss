@@ -61,15 +61,71 @@ body {
     background: #f8f8f8;
 
     .header {
+      background: #f8f8f8;
+        z-index: 555;
         height: 60px;
         border-bottom: 1px solid #ccc;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         position: sticky;
         top: 0;
-
+.download{
+    margin-left: 5px;
+   padding-right: 25px;
+   display: flex;
+   align-items: center;
+   select{
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    padding: 0 15px;
+    text-align: center;
+    margin-right: 5px;
+    cursor: pointer;
+   }
+   .actions{
+    display: flex;
+    margin-right: 15px;
+    button,a{
+        border: none;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        cursor: pointer;
+        svg{
+            height: 25px;
+            width: 25px;
+        }
+    }
+   }
+  .selected{
+    font-size: 14px;
+    font-weight: 500;
+    color: #9999;
+    display: flex;
+    align-items: center;
+    button{
+        background-color: transparent;
+        margin-right: 5px;
+        border: none;
+        cursor: pointer;
+        svg{
+            display: block;
+            height: 25px;
+            width: 25px;
+        }
+    }
+  }
+}
         .search {
             flex: 1;
             position: relative;
+            height: 100%;
 
             .icon {
                 position: absolute;
@@ -163,6 +219,7 @@ body {
     max-width: 720px;
     box-shadow: 0 0 15px 0 rgba(#000, .1);
     padding: 50px;
+    background-color: white;
     position: relative;
 
     .modal-close-btn {

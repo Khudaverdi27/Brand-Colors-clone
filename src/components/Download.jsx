@@ -53,7 +53,8 @@ function Download() {
     const defaultValue = `http://localhost:5173/brands/${selectedBrands.join(
       ","
     )}`;
-    prompt("Bir değer girin:", defaultValue);
+    const res = prompt("Your links:", defaultValue);
+    location.href = res;
   };
   return (
     <div className="download">
